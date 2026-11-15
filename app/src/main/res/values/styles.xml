@@ -1,9 +1,13 @@
 <resources>
     <style name="Theme.ScratchIcon" parent="Theme.Material3.Dark.NoActionBar">
-        <item name="colorPrimary">#D0BCFF</item>
-        <item name="colorSecondary">#CCC2DC</item>
-        <item name="android:statusBarColor">#141218</item>
-        <item name="android:navigationBarColor">#141218</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">#FFFFFF</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:colorAccent">#FFFFFF</item>
+        <item name="android:statusBarColor">#0D0D0D</item>
+        <item name="android:navigationBarColor">#0D0D0D</item>
+        <item name="android:windowBackground">#0D0D0D</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>
