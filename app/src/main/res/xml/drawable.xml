@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <category title="SCRATCHICON" />
+    <item drawable="ic_youtube" />
+    <item drawable="ic_chrome" />
+    <item drawable="ic_gmail" />
+    <item drawable="ic_maps" />
+    <item drawable="ic_camera" />
+    <item drawable="ic_phone" />
+    <item drawable="ic_settings" />
+    <item drawable="ic_photos" />
+    <item drawable="ic_clock" />
+    <item drawable="ic_store" />
+    <item drawable="ic_contacts" />
+    <item drawable="ic_files" />
+</resources>
