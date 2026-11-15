@@ -1,7 +1,6 @@
 package com.scratchicons.app;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -13,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 
 public class MainActivity extends Activity {
@@ -99,11 +97,11 @@ public class MainActivity extends Activity {
         page.setBackgroundColor(Color.TRANSPARENT);
         scroll.addView(page, new ScrollView.LayoutParams(-1, -2));
 
-        // Hero: transparent over the pizza wallpaper, not a separate banner background.
+        // Compact hero: the gallery follows directly, with no reserved button slot.
         LinearLayout hero = new LinearLayout(this);
         hero.setOrientation(LinearLayout.VERTICAL);
         hero.setGravity(Gravity.CENTER);
-        hero.setPadding(dp(8), dp(24), dp(8), dp(24));
+        hero.setPadding(dp(8), dp(20), dp(8), dp(4));
 
         TextView title = text("SCRATCHICON", 39, WHITE, true);
         title.setGravity(Gravity.CENTER);
@@ -113,21 +111,10 @@ public class MainActivity extends Activity {
                 "A hand-drawn icon pack, perfect for people who like scratchy stuff",
                 16, WHITE, false);
         tagline.setGravity(Gravity.CENTER);
+        tagline.setLineSpacing(dp(1), 1f);
         LinearLayout.LayoutParams taglineParams = linearParams(-1, -2);
-        taglineParams.topMargin = dp(12);
+        taglineParams.topMargin = dp(8);
         hero.addView(tagline, taglineParams);
-
-        MaterialButton apply = button("APPLY ICON PACK");
-        LinearLayout.LayoutParams applyParams = linearParams(-1, dp(54));
-        applyParams.topMargin = dp(22);
-        hero.addView(apply, applyParams);
-        apply.setOnClickListener(view -> showApplyInstructions());
-
-        TextView applyHint = text("BUILT-IN ARTWORK  |  NO IMPORTS  |  NO SHORTCUTS", 10, WHITE, false);
-        applyHint.setGravity(Gravity.CENTER);
-        LinearLayout.LayoutParams hintParams = linearParams(-1, -2);
-        hintParams.topMargin = dp(9);
-        hero.addView(applyHint, hintParams);
         page.addView(hero, linearParams(-1, -2));
 
         MaterialCardView galleryCard = card();
@@ -166,7 +153,7 @@ public class MainActivity extends Activity {
         }
         galleryCard.addView(gallery);
         LinearLayout.LayoutParams galleryParams = linearParams(-1, -2);
-        galleryParams.topMargin = dp(12);
+        galleryParams.topMargin = dp(4);
         page.addView(galleryCard, galleryParams);
 
         MaterialCardView compatibilityCard = card();
@@ -176,7 +163,7 @@ public class MainActivity extends Activity {
         TextView compatibilityTitle = text("ICON PACK COMPATIBILITY", 20, WHITE, true);
         compatibility.addView(compatibilityTitle);
         TextView compatibilityBody = text(
-                "SCRATCHICON includes standard appfilter mappings for launchers that support third-party icon packs. On supported ColorOS versions, look in the Home screen Icons panel for installed third-party packs. Other compatible launchers have their own icon-pack settings. Unmapped apps keep their original icons until we add artwork and a mapping for them.",
+                "SCRATCHICON includes standard icon-pack mappings for compatible launchers. Some launchers also support monochrome themed icons; others use only the full-colour artwork. Unmapped apps keep their original icons until artwork and a matching app component are added.",
                 13, WHITE, false);
         compatibilityBody.setLineSpacing(dp(4), 1f);
         LinearLayout.LayoutParams compatibilityBodyParams = linearParams(-1, -2);
@@ -230,19 +217,6 @@ public class MainActivity extends Activity {
         return card;
     }
 
-    private MaterialButton button(String label) {
-        MaterialButton button = new MaterialButton(this);
-        button.setText(label);
-        button.setTextSize(13);
-        button.setTypeface(scratchFont, Typeface.BOLD);
-        button.setAllCaps(false);
-        button.setTextColor(INK);
-        button.setBackgroundTintList(android.content.res.ColorStateList.valueOf(Color.rgb(255, 239, 190)));
-        button.setCornerRadius(dp(13));
-        button.setElevation(dp(2));
-        return button;
-    }
-
     private View createIconTile(IconItem item) {
         MaterialCardView tile = new MaterialCardView(this);
         tile.setRadius(dp(15));
@@ -275,20 +249,5 @@ public class MainActivity extends Activity {
 
         tile.addView(content);
         return tile;
-    }
-
-    private void showApplyInstructions() {
-        new AlertDialog.Builder(this)
-                .setTitle("APPLY SCRATCHICON")
-                .setMessage(
-                        "ColorOS (where third-party icon packs are supported):\n" +
-                        "1. Return to your Home screen.\n" +
-                        "2. Touch and hold an empty area.\n" +
-                        "3. Open Icons and select SCRATCHICON from the installed packs.\n\n" +
-                        "Other compatible launchers:\n" +
-                        "Open that launcher's Settings, find Icon style or Themes, then select SCRATCHICON.\n\n" +
-                        "This applies the pack inside a compatible launcher. Android does not let an ordinary app force icons to change in launchers that do not support icon packs.")
-                .setPositiveButton("GOT IT", null)
-                .show();
     }
 }
