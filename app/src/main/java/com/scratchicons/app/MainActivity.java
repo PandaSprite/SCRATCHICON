@@ -18,7 +18,6 @@ public class MainActivity extends Activity {
     private Typeface scratchFont;
 
     private static final int WHITE = Color.WHITE;
-    private static final int INK = Color.rgb(28, 16, 18);
 
     private static class IconItem {
         final String label;
@@ -33,18 +32,18 @@ public class MainActivity extends Activity {
     }
 
     private final IconItem[] icons = new IconItem[] {
-            new IconItem("YouTube", "YouTube", R.drawable.ic_youtube),
-            new IconItem("Chrome", "Chrome", R.drawable.ic_chrome),
-            new IconItem("Gmail", "Gmail", R.drawable.ic_gmail),
-            new IconItem("Maps", "Google Maps", R.drawable.ic_maps),
-            new IconItem("Camera", "Camera", R.drawable.ic_camera),
-            new IconItem("Phone", "Phone", R.drawable.ic_phone),
-            new IconItem("Settings", "Settings", R.drawable.ic_settings),
-            new IconItem("Photos", "Google Photos", R.drawable.ic_photos),
-            new IconItem("Clock", "Clock", R.drawable.ic_clock),
+            new IconItem("SCRATCHICON", "App artwork", R.drawable.ic_scratchicon),
+            new IconItem("Brave", "Brave Browser", R.drawable.ic_brave),
+            new IconItem("ChatGPT", "ChatGPT", R.drawable.ic_chatgpt),
+            new IconItem("Facebook", "Facebook", R.drawable.ic_facebook),
+            new IconItem("Google", "Google app", R.drawable.ic_google_browser),
+            new IconItem("Chrome", "Google Chrome", R.drawable.ic_chrome),
             new IconItem("Play Store", "Google Play Store", R.drawable.ic_store),
-            new IconItem("Contacts", "Contacts", R.drawable.ic_contacts),
-            new IconItem("Files", "Files", R.drawable.ic_files)
+            new IconItem("ibisPaint X", "ibisPaint X", R.drawable.ic_ibispaint_x),
+            new IconItem("MetroList", "MetroList", R.drawable.ic_metrolist),
+            new IconItem("MT Manager", "MT Manager", R.drawable.ic_mt_manager),
+            new IconItem("TikTok", "TikTok", R.drawable.ic_tiktok),
+            new IconItem("YouTube", "YouTube", R.drawable.ic_youtube)
     };
 
     private int dp(float value) {
@@ -97,7 +96,6 @@ public class MainActivity extends Activity {
         page.setBackgroundColor(Color.TRANSPARENT);
         scroll.addView(page, new ScrollView.LayoutParams(-1, -2));
 
-        // Compact hero: the gallery follows directly, with no reserved button slot.
         LinearLayout hero = new LinearLayout(this);
         hero.setOrientation(LinearLayout.VERTICAL);
         hero.setGravity(Gravity.CENTER);
@@ -125,7 +123,7 @@ public class MainActivity extends Activity {
         TextView galleryTitle = text("BUILT-IN ICONS", 23, WHITE, true);
         gallery.addView(galleryTitle, linearParams(-1, -2));
 
-        TextView count = text("12 PLACEHOLDER DESIGNS  /  APPFILTER MAPPINGS INCLUDED", 10, WHITE, false);
+        TextView count = text("12 HAND-DRAWN DESIGNS  /  LAUNCHER MAPPINGS", 10, WHITE, false);
         LinearLayout.LayoutParams countParams = linearParams(-1, -2);
         countParams.topMargin = dp(5);
         gallery.addView(count, countParams);
@@ -163,7 +161,7 @@ public class MainActivity extends Activity {
         TextView compatibilityTitle = text("ICON PACK COMPATIBILITY", 20, WHITE, true);
         compatibility.addView(compatibilityTitle);
         TextView compatibilityBody = text(
-                "SCRATCHICON includes standard icon-pack mappings for compatible launchers. Some launchers also support monochrome themed icons; others use only the full-colour artwork. Unmapped apps keep their original icons until artwork and a matching app component are added.",
+                "SCRATCHICON includes standard icon-pack mappings for compatible launchers. Some launchers also support monochrome themed icons; others use only the full-colour artwork. Unmapped apps keep their original icons until a matching mapping is added.",
                 13, WHITE, false);
         compatibilityBody.setLineSpacing(dp(4), 1f);
         LinearLayout.LayoutParams compatibilityBodyParams = linearParams(-1, -2);

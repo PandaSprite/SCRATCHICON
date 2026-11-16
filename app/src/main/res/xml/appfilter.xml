@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- YouTube variants used by different app releases -->
+    <!-- Brave Browser -->
+    <item component="ComponentInfo{com.brave.browser/com.google.android.apps.chrome.Main}" drawable="ic_brave" />
+    <item component="ComponentInfo{com.brave.browser/com.brave.browser.MainActivity}" drawable="ic_brave" />
+
+    <!-- ChatGPT -->
+    <item component="ComponentInfo{com.openai.chatgpt/com.openai.chatgpt.MainActivity}" drawable="ic_chatgpt" />
+    <item component="ComponentInfo{com.openai.chatgpt/.MainActivity}" drawable="ic_chatgpt" />
+
+    <!-- Facebook -->
+    <item component="ComponentInfo{com.facebook.katana/com.facebook.katana.activity.FbMainTabActivity}" drawable="ic_facebook" />
+
+    <!-- Google app and Chrome -->
+    <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}" drawable="ic_google_browser" />
+    <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="ic_chrome" />
+
+    <!-- Google Play Store -->
+    <item component="ComponentInfo{com.android.vending/com.google.android.finsky.activities.MainActivity}" drawable="ic_store" />
+    <item component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}" drawable="ic_store" />
+
+    <!-- ibisPaint X -->
+    <item component="ComponentInfo{jp.ne.ibis.ibispaintx.app/jp.ne.ibis.ibispaintx.app.MainActivity}" drawable="ic_ibispaint_x" />
+
+    <!-- MetroList -->
+    <item component="ComponentInfo{com.metrolist.music/com.metrolist.music.MainActivity}" drawable="ic_metrolist" />
+
+    <!-- MT Manager -->
+    <item component="ComponentInfo{bin.mt.plus/bin.mt.plus.Main}" drawable="ic_mt_manager" />
+
+    <!-- TikTok -->
+    <item component="ComponentInfo{com.zhiliaoapp.musically/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="ic_tiktok" />
+
+    <!-- YouTube -->
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.HomeActivity}" drawable="ic_youtube" />
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="ic_youtube" />
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.froyo.phone.HomeActivity}" drawable="ic_youtube" />
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.tablet.HomeActivity}" drawable="ic_youtube" />
-
-    <!-- Google apps -->
-    <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="ic_chrome" />
-    <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}" drawable="ic_gmail" />
-    <item component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}" drawable="ic_maps" />
-    <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="ic_photos" />
-    <item component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}" drawable="ic_store" />
-    <item component="ComponentInfo{com.google.android.deskclock/com.android.deskclock.DeskClock}" drawable="ic_clock" />
-    <item component="ComponentInfo{com.google.android.contacts/com.google.android.contacts.activities.PeopleActivity}" drawable="ic_contacts" />
-    <item component="ComponentInfo{com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity}" drawable="ic_files" />
-
-    <!-- AOSP and common Android variants -->
-    <item component="ComponentInfo{com.android.settings/com.android.settings.Settings}" drawable="ic_settings" />
-    <item component="ComponentInfo{com.android.camera2/com.android.camera.CameraLauncher}" drawable="ic_camera" />
-    <item component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClock}" drawable="ic_clock" />
-    <item component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}" drawable="ic_contacts" />
-    <item component="ComponentInfo{com.android.contacts/com.android.contacts.activities.DialtactsActivity}" drawable="ic_phone" />
-    <item component="ComponentInfo{com.android.dialer/com.android.dialer.main.impl.MainActivity}" drawable="ic_phone" />
-    <item component="ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}" drawable="ic_phone" />
-    <item component="ComponentInfo{com.android.documentsui/com.android.documentsui.LauncherActivity}" drawable="ic_files" />
-
-    <!-- OPPO / Oplus variants -->
-    <item component="ComponentInfo{com.oppo.camera/com.oppo.camera.Camera}" drawable="ic_camera" />
-    <item component="ComponentInfo{com.oplus.camera/com.oplus.camera.Camera}" drawable="ic_camera" />
-    <item component="ComponentInfo{com.oppo.alarmclock/com.oppo.alarmclock.AlarmClock}" drawable="ic_clock" />
-    <item component="ComponentInfo{com.oplus.dialer/com.oplus.dialer.DialtactsActivity}" drawable="ic_phone" />
-    <item component="ComponentInfo{com.oplus.contacts/com.oplus.contacts.activities.PeopleActivity}" drawable="ic_contacts" />
-    <item component="ComponentInfo{com.oppo.filemanager/com.oppo.filemanager.Main}" drawable="ic_files" />
-    <item component="ComponentInfo{com.oppo.gallery3d/com.oppo.gallery3d.app.Gallery}" drawable="ic_photos" />
 </resources>

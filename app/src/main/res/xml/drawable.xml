@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <category title="SCRATCHICON" />
-    <item drawable="ic_youtube" />
+    <item drawable="ic_brave" />
+    <item drawable="ic_chatgpt" />
+    <item drawable="ic_facebook" />
+    <item drawable="ic_google_browser" />
     <item drawable="ic_chrome" />
-    <item drawable="ic_gmail" />
-    <item drawable="ic_maps" />
-    <item drawable="ic_camera" />
-    <item drawable="ic_phone" />
-    <item drawable="ic_settings" />
-    <item drawable="ic_photos" />
-    <item drawable="ic_clock" />
     <item drawable="ic_store" />
-    <item drawable="ic_contacts" />
-    <item drawable="ic_files" />
+    <item drawable="ic_ibispaint_x" />
+    <item drawable="ic_metrolist" />
+    <item drawable="ic_mt_manager" />
+    <item drawable="ic_tiktok" />
+    <item drawable="ic_youtube" />
 </resources>

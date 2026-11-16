@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <icons>
-    <icon package="com.google.android.youtube" drawable="@drawable/ic_youtube_mono" />
+    <icon package="com.brave.browser" drawable="@drawable/ic_brave_mono" />
+    <icon package="com.openai.chatgpt" drawable="@drawable/ic_chatgpt_mono" />
+    <icon package="com.facebook.katana" drawable="@drawable/ic_facebook_mono" />
+    <icon package="com.google.android.googlequicksearchbox" drawable="@drawable/ic_google_browser_mono" />
     <icon package="com.android.chrome" drawable="@drawable/ic_chrome_mono" />
-    <icon package="com.google.android.gm" drawable="@drawable/ic_gmail_mono" />
-    <icon package="com.google.android.apps.maps" drawable="@drawable/ic_maps_mono" />
-    <icon package="com.google.android.apps.photos" drawable="@drawable/ic_photos_mono" />
     <icon package="com.android.vending" drawable="@drawable/ic_store_mono" />
-    <icon package="com.google.android.deskclock" drawable="@drawable/ic_clock_mono" />
-    <icon package="com.google.android.contacts" drawable="@drawable/ic_contacts_mono" />
-    <icon package="com.google.android.apps.nbu.files" drawable="@drawable/ic_files_mono" />
-    <icon package="com.android.settings" drawable="@drawable/ic_settings_mono" />
-    <icon package="com.android.camera2" drawable="@drawable/ic_camera_mono" />
-    <icon package="com.oppo.camera" drawable="@drawable/ic_camera_mono" />
-    <icon package="com.oplus.camera" drawable="@drawable/ic_camera_mono" />
-    <icon package="com.android.dialer" drawable="@drawable/ic_phone_mono" />
-    <icon package="com.google.android.dialer" drawable="@drawable/ic_phone_mono" />
-    <icon package="com.android.contacts" drawable="@drawable/ic_contacts_mono" />
-    <icon package="com.oplus.dialer" drawable="@drawable/ic_phone_mono" />
-    <icon package="com.oplus.contacts" drawable="@drawable/ic_contacts_mono" />
+    <icon package="jp.ne.ibis.ibispaintx.app" drawable="@drawable/ic_ibispaint_x_mono" />
+    <icon package="com.metrolist.music" drawable="@drawable/ic_metrolist_mono" />
+    <icon package="bin.mt.plus" drawable="@drawable/ic_mt_manager_mono" />
+    <icon package="com.zhiliaoapp.musically" drawable="@drawable/ic_tiktok_mono" />
+    <icon package="com.google.android.youtube" drawable="@drawable/ic_youtube_mono" />
 </icons>
